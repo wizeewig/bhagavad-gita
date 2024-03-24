@@ -11,6 +11,7 @@ function App() {
        <Navbar/>
        <Routes>
           <Route exact path="/" element = {<Home/>}/>
+          <Route exact path="/bhagavad-gita" element = {<Home/>}/>
           <Route exact path="/chapter-1" element = {<Chapter ch={1}/>}/>
           <Route exact path="/chapter-2" element = {<Chapter ch={2}/>}/>
           <Route exact path="/chapter-3" element = {<Chapter ch={3}/>}/>
