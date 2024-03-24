@@ -12,7 +12,7 @@ function Home() {
     
     const handleClick = () => {
         navigate(`/chapter-${selectedValue}`);
-        console.log(selectedValue);
+        // console.log(selectedValue);
       };
 
   return (
