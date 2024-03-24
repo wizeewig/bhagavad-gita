@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/bhagavad-gita/static/css/main.f855e6bc.css",
-    "main.js": "/bhagavad-gita/static/js/main.37d772ee.js",
+    "main.js": "/bhagavad-gita/static/js/main.c27957e9.js",
     "static/js/453.bd345d62.chunk.js": "/bhagavad-gita/static/js/453.bd345d62.chunk.js",
     "static/media/loading.gif": "/bhagavad-gita/static/media/loading.f4d71b7e2329eafbaea7.gif",
     "index.html": "/bhagavad-gita/index.html",
     "main.f855e6bc.css.map": "/bhagavad-gita/static/css/main.f855e6bc.css.map",
-    "main.37d772ee.js.map": "/bhagavad-gita/static/js/main.37d772ee.js.map",
+    "main.c27957e9.js.map": "/bhagavad-gita/static/js/main.c27957e9.js.map",
     "453.bd345d62.chunk.js.map": "/bhagavad-gita/static/js/453.bd345d62.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.37d772ee.js"
+    "static/js/main.c27957e9.js"
   ]
 }
