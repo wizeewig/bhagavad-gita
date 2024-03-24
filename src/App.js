@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Chapter from './components/Chapter';
 import {BrowserRouter as Router,Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/chapter-17" element = {<Chapter ch={17}/>}/>
           <Route exact path="/chapter-18" element = {<Chapter ch={18}/>}/>
         </Routes>
+        <Footer/>
        </div>
        </Router>
   );
