@@ -18,7 +18,8 @@ function Home() {
       };
 
   return (
-    <div className="input-group container" style={{marginTop:"150px"}}>
+    <>
+    <div className="input-group container" style={{marginTop:"230px", marginBottom:"130px"}}>
   <select className="custom-select" id="inputGroupSelect04" onChange={handleChange}>
     <option selected>Select the chapter</option>
     <option value="1">Chapter One - अर्जुनविषादयोग</option>
@@ -44,6 +45,7 @@ function Home() {
     <button className="btn btn-dark" onClick={handleClick} type="button" >Submit</button>
   </div>
 </div>
+</>
   )
 }
 

@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = () =>
 
-<footer className="footer fixed-bottom">
+<footer className="footer ">
   <section className="bg-light py-5 py-xl-8 py-xxl-9 border-top border-light">
     <div className="container overflow-hidden">
       <div className="row gy-5 gy-md-0">
