@@ -4,6 +4,8 @@ import Home from './components/Home';
 import Chapter from './components/Chapter';
 import {BrowserRouter as Router,Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer';
+import Solution from './components/Solution';
+import SolutionVerses from './components/SolutionVerses';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route exact path="/chapter-16" element = {<Chapter ch={16}/>}/>
           <Route exact path="/chapter-17" element = {<Chapter ch={17}/>}/>
           <Route exact path="/chapter-18" element = {<Chapter ch={18}/>}/>
+          <Route exact path="/solution" element = {<Solution/>}/>
+          <Route exact path="/solution-verses" element = {<SolutionVerses/>}/>
         </Routes>
         <Footer/>
        </div>

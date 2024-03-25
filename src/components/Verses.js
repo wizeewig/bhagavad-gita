@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Verses(props) {
 
-    let {text, chnumber, verseNumber, transliteration, english, hindi} = props;
+    let {text, chnumber, verseNumber, transliteration, translation, meaning} = props;
 
     return (
         <>
@@ -14,10 +15,9 @@ function Verses(props) {
                   <h5 className="card-title">Verse Number: {verseNumber}</h5>
                   <p className="card-text"><span style={{textDecoration:"underline"}}>Verse:</span> {text}</p>
                   <p className="card-text"><span style={{textDecoration:"underline"}}>Transliteration:</span> {transliteration}</p>
-                  {/* <p className="card-text"><span style={{textDecoration:"underline"}}>Meaning:</span></p> */}
-                  <p className="card-text"><span style={{textDecoration:"underline"}}>Meaning:</span> {english}</p>
-                  {/* <p className="card-text"><span style={{textDecoration:"underline"}}>Hindi:</span> {hindi}</p> */}
-                  <a rel="noreferrer" href={`https://bhagavadgita.io/chapter/${chnumber}/verse/${verseNumber}`} target="_blank" className="btn btn-sm btn-dark">Read More</a>
+                  <p className="card-text"><span style={{textDecoration:"underline"}}>Translation:</span> {translation}<span style={{fontWeight:"bolder"}}> ....</span></p>
+                  <p className="card-text"><span style={{textDecoration:"underline"}}>Meaning:</span> {meaning}<span style={{fontWeight:"bolder"}}> ....</span></p>
+                  <Link className="btn btn-sm btn-dark" to="/solution-verses" state={{ch:chnumber,vno:verseNumber}}>Read More</Link>
               </div>
           </div>
         </div>

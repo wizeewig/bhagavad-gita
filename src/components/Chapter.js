@@ -67,6 +67,9 @@ useEffect(() => {
   <p className="lead">
     <a className="btn btn-lg btn-dark" href={`https://bhagavadgita.io/chapter/${props.ch}`} target='_blank' role="button">Learn more</a>
   </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg btn-dark" target='_blank' href="https://youtu.be/28sptQICKCk?feature=shared" role="button">Youtube</a>
+  </p>
 </div>
     {loading && <Spinner />}
             <div className="row">
@@ -79,8 +82,8 @@ useEffect(() => {
                         verseNumber={element.verse_number}
                         text={element.text}
                         transliteration={element.transliteration}
-                        english={element.translations[0].description}
-                        hindi={element.translations[3].description}
+                        translation={element.translations[0].description.slice(0,80)}
+                        meaning={element.commentaries[13].description.slice(0,80)}
                       />
                     </div>
                   );

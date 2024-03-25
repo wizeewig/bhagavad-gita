@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Home() {
 
@@ -12,13 +12,14 @@ function Home() {
       };
     
     const handleClick = () => {
-        if(selectedValue=="") selectedValue=1
+        if(selectedValue==="") selectedValue=1
         navigate(`/chapter-${selectedValue}`);
         // console.log(selectedValue);
       };
 
   return (
     <>
+    <div className='container'>
     <div className="input-group container" style={{marginTop:"230px", marginBottom:"130px"}}>
   <select className="custom-select" id="inputGroupSelect04" onChange={handleChange}>
     <option selected>Select the chapter</option>
@@ -44,6 +45,9 @@ function Home() {
   <div className="input-group-append">
     <button className="btn btn-dark" onClick={handleClick} type="button" >Submit</button>
   </div>
+  <Link to="/solution"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLTFWIjRhuWOeDJNTSRstSAFuDmoQZAClCg&s" alt="Help" style={{height:"38px", width:"38px", marginLeft:"10px"}}/></Link>
+</div>
+
 </div>
 </>
   )
